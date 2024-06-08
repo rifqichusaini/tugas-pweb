@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segitiga sama sisi</title>
     <style>
+        body{
+            background-image: url(https://i.ibb.co.com/2N05yXh/bg1.png);
+        }
         .wrapper {
             display: flex;
             flex-direction: column;
@@ -39,7 +42,7 @@
         <div class="input">
             <h4>Program untuk Membuat Segitiga Sama Sisi</h4>
             <form action="" method="POST">
-                <input type="number" name="nilai">
+                <input type="number" name="nilai" placeholder="Masukkan Tinggi Segitiga">
                 <br>
                 <input type="submit" value="submit" name="submit">
             </form>
