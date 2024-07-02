@@ -5,9 +5,12 @@ foreach($arrNilai as $nama=>$nilai){
     echo "Nilai $nama=$nilai<br>";
 }
 
-reset($arrNilai);
 echo "<br>Menampilkan isi array asosiatif dengan WHILE dan LIST:<br>";
-while(list($nama,$nilai)=each($arrNilai)){
+reset($arrNilai);
+while ($element = current($arrNilai)) {
+    $nama = key($arrNilai);
+    $nilai = current($arrNilai);
     echo "Nilai $nama=$nilai<br>";
+    next($arrNilai);
 }
 ?>
